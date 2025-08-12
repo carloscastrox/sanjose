@@ -10,8 +10,6 @@
     <link rel="shortcut icon" href="assets/img/logosena.png" type="image/x-icon">
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!--Bootstrap JS-->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -21,9 +19,9 @@
 Taller_1: Diseñar Landing Page (Tema libre).
 * Requisitos:
     * Diseño de menu de navegación (Insertar logo, links)
-    * Diseño de Carousel (Insertar imágenes de tamaño 1100x500px)
-    * Diseño de secciones (Insertar 2)
-    * Diseño de pie de página
+    * Diseño de Carousel (Insertar imágenes de tamaño 1100x500px) OK
+    * Diseño de secciones (Insertar 2) OK
+    * Diseño de pie de página OK
 
 Workshop_1: Landing Page Design (Free Theme).
 *Requirements:
@@ -56,7 +54,7 @@ Temas
 * Lighthouse
 -->
     <header>
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="assets/img/logosena.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
@@ -68,13 +66,13 @@ Temas
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Inicio</a>
+                            <a class="nav-link" href="#carousel">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Reseña</a>
+                            <a class="nav-link" href="#res">Reseña</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Galería</a>
+                            <a class="nav-link" href="#gal">Galería</a>
                         </li>
                     </ul>
                 </div>
@@ -94,13 +92,13 @@ Temas
                 <!-- The slideshow/carousel -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="la.jpg" alt="Los Angeles" class="d-block w-100">
+                        <img src="assets/img/foto1.jpg" alt="Foto 1" class="d-block w-100">
                     </div>
                     <div class="carousel-item">
-                        <img src="chicago.jpg" alt="Chicago" class="d-block w-100">
+                        <img src="assets/img/foto2.jpg" alt="Foto 2" class="d-block w-100">
                     </div>
                     <div class="carousel-item">
-                        <img src="ny.jpg" alt="New York" class="d-block w-100">
+                        <img src="assets/img/foto3.jpg" alt="Foto 3" class="d-block w-100">
                     </div>
                 </div>
 
@@ -115,18 +113,71 @@ Temas
         </section>
     </header>
     <main>
-        <section id="intro">
+        <section id="res" class="container py-5">
+            <h2 class="pb-5">Articulación con la Educación Media - Doble Titulación - ASEM</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/img/logosena.png" alt="Logo" class="img-fluid" width="50%" />
+                </div>
+                <div class="col-md-8">
+                    <p>Es un programa del Gobierno Nacional liderado por el SENA y el Ministerio de Educación, que
+                        permite a los estudiantes de la Educación Media graduarse con dos títulos: el primero que los
+                        acredita como bachilleres y el segundo como técnicos del SENA, el cual permite fortalecer sus
+                        competencias laborales y ofrece oportunidades en el sector productivo del país.
 
+                        El programa brinda a los jóvenes formación profesional integral con calidad, que les permita
+                        continuar su proceso formativo y aportar al desarrollo económico y social del país. </p>
+                </div>
+            </div>
         </section>
-        <section id="rese">
+        <section id="gal" class="container py-5">
+            <h2 class="pb-5">Galería de Imagenes</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/foto1.jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">Some example text.</p>
+                            <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#card1">See Profile</button>
 
+                            <div id="card1" class="collapse">
+                                Lorem ipsum dolor text....
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/foto2.jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">Some example text.</p>
+                            <a href="#" class="btn btn-primary">See Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/foto3.jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">Some example text.</p>
+                            <a href="#" class="btn btn-primary">See Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
     <footer class="bg-dark">
-         <p class="py-4 text-center text-light">Carlos Andres Castro - Copyright©
+        <p class="py-4 text-center text-light">Carlos Andres Castro - Copyright©
             2025</p>
     </footer>
+
+    <!--Bootstrap JS-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

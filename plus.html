@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+
+<head>
+    <!--Meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title y favicon-->
+    <title>Bootstrap-San Jose</title>
+    <link rel="shortcut icon" href="../assets/img/logosena.png" type="image/x-icon">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/img/logosena.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#carousel">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="suma.html">Suma</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="a2.html">A2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="a3.html">A3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Section5</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Section6</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../">Atrás</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container pt-5 mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <img src="../assets/img/logosena.png" alt="Logo" width="72" height="72">
+                            <h1 class="display-6">Registro de Usuario</h1>
+                        </div>
+                        <form action="" method="post" enctype="application/x-www-form-urlencoded">
+                            <div class="mb-3 mt-3">
+                                <label for="nombres" class="form-label">Nombres</label>
+                                <input class="form-control" type="text" name="nombres" id="nombres"
+                                    placeholder="Escriba sus nombres" required>
+                            </div>
+                            <div class="mb-3 mt-3">
+                                <label for="apellidos" class="form-label">Apellidos</label>
+                                <input class="form-control" type="text" name="apellidos" id="apellidos"
+                                    placeholder="Escriba sus apellidos" required>
+                            </div>
+                            <div class="mb-3 mt-3">
+                                <label for="email" class="form-label">Correo</label>
+                                <input class="form-control" type="email" name="email" id="email"
+                                    placeholder="Escriba su correo" required>
+                            </div>
+                            <div class="mb-3 mt-3">
+                                <label for="password" class="form-label">Contraseña</label>
+                                <input class="form-control" type="password" name="password1" id="password1"
+                                    placeholder="Escriba su contraseña" required>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-block"
+                                    name="regadmin">Registrar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <i class="bi bi-person-bounding-box" style="font-size: 60px;"></i>
+                            <h1 class="display-6">Inicio de Sesión</h1>
+                        </div>
+                        <form action="" method="post" enctype="application/x-www-form-urlencoded">
+                            <div class="mb-3 mt-3">
+                                <label for="email" class="form-label">Correo</label>
+                                <input class="form-control" type="email" name="email" id="email"
+                                    placeholder="Escriba su correo" autofocus required>
+                            </div>
+                            <div class="mb-3 mt-3">
+                                <label for="password" class="form-label">Contraseña</label>
+                                <div class="input-group">
+                                    <input class="form-control" type="password" name="password" id="password"
+                                        placeholder="Escriba su contraseña" required>
+                                    <span class="input-group-text pt-0" onclick="pass_show_hide();">
+                                        <i class="bi bi-eye-fill d-none" id="showeye" style="font-size: 20px;"></i>
+                                        <i class="bi bi-eye-slash-fill" id="hideeye" style="font-size: 20px;"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-success btn-block" name="inicio">Iniciar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

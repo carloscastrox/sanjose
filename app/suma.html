@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+
+<head>
+    <!--Meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title y favicon-->
+    <title>Bootstrap-San Jose</title>
+    <link rel="shortcut icon" href="../assets/img/logosena.png" type="image/x-icon">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="plus.html">Atrás</a>
+    </header>
+    <main class="container pt-5 mt-5">
+        <!--
+        Algoritmo para realizar operaciones de Suma, resta, multiplicación y división
+        -->
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Operaciones Aritméticas</h5>
+                <!--Formulario para capturar datos-->
+                <form action="">
+                    <input type="text" id="num1" onchange="calcular();">
+                    <input type="text" id="num2" onchange="calcular();">
+                    <select name="" id="oper" onchange="calcular();">
+                        <option value="op">Seleccione operación</option>
+                        <option value="+">Suma</option>
+                        <option value="-">Resta</option>
+                        <option value="*">Multiplicación</option>
+                        <option value="/">División</option>
+                    </select>
+                    <!--<button type="button" id="calcular" class="btn btn-primary">Calcular</button>-->
+                </form>
+                Resultado: <p class="h2" id="resultado">0</p>
+                <h1 id="uno"></h1>
+            </div>
+        </div>
+
+
+    </main>
+    <script>
+        //document.getElementById("uno").innerHTML = "Hola Mundo te saludo Carlos"
+        
+        function calcular(){
+        //document.getElementById("calcular").addEventListener('click', () => {
+            //Inputs
+            var a = parseInt(document.getElementById("num1").value) || 0
+            var b = parseInt(document.getElementById("num2").value) || 0
+            var op = document.getElementById("oper").value
+            //Process
+            switch (op) {
+                case 'op':
+                    document.getElementById("resultado").innerHTML = "Seleccione una operación"
+                    break;
+
+                case '+':
+                    var c = a + b
+                    document.getElementById("resultado").innerHTML = c
+                    break;
+
+                case '-':
+                    var c = a - b
+                    document.getElementById("resultado").innerHTML = c
+                    break;
+
+                default:
+                    document.getElementById("resultado").innerHTML = "Operación no soportada"
+                    break;
+            }
+        //});
+        }
+
+    </script>
+  
+</body>
+</html>
+</body>
+
+</html>

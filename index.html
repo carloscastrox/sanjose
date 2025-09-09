@@ -10,6 +10,8 @@
     <link rel="shortcut icon" href="assets/img/logosena.png" type="image/x-icon">
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -18,10 +20,19 @@
 
 Taller_1: Diseñar Landing Page (Tema libre).
 * Requisitos:
-    * Diseño de menu de navegación (Insertar logo, links)
+    * Diseño de menu de navegación (Insertar logo, links) OK
     * Diseño de Carousel (Insertar imágenes de tamaño 1100x500px) OK
     * Diseño de secciones (Insertar 2) OK
     * Diseño de pie de página OK
+
+Taller 2: Landing Page (Tema libre).
+* Requisitos:
+    * Diseño de 2 secciones con Grid básico
+    * Hipervinculo a página auxiliar (app/plus.html)
+    * Crear un navbar con un logo y links(un link debe Volver al index)
+    * Crear un formulario de registro de usuarios
+    * Crear un formulario de inicio de sesión de usuarios
+
 
 Workshop_1: Landing Page Design (Free Theme).
 *Requirements:
@@ -31,25 +42,23 @@ Workshop_1: Landing Page Design (Free Theme).
     * Footer design
 
 
-
-
 ----------------------------------------------------
 Temas
 * Estructura de archivos y carpetas____(OK)
 * Configuración Bootstrap____(OK)
 * Comentarios en el código____(OK)
-* Configuración Iconos bootstrap *****
+* Configuración Iconos bootstrap (OK)
 * meta tags (Pendientes algunas)
-* void and content tags *****
-* header, main y footer *****
-* Navbar *****
-* Sections, Grid basic, cards *****
+* void and content tags (OK)
+* header, main y footer (OK)
+* Navbar (OK)
+* Sections, Grid basic, cards (OK)
 * Content:
     * Texts
     * Images(Local)
     * Audio(Local)
     * Video(local)
-* Enlaces Navbar #
+* Enlaces Navbar # (OK)
 * Script hide # 
 * Lighthouse
 -->
@@ -73,6 +82,18 @@ Temas
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#gal">Galería</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="#icons">Icons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Section5</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Section6</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="app/plus.html">Más</a>
                         </li>
                     </ul>
                 </div>
@@ -114,7 +135,7 @@ Temas
     </header>
     <main>
         <section id="res" class="container py-5">
-            <h2 class="pb-5">Articulación con la Educación Media - Doble Titulación - ASEM</h2>
+            <h2 class="py-5">Articulación con la Educación Media - Doble Titulación - ASEM</h2>
             <div class="row">
                 <div class="col-md-4">
                     <img src="assets/img/logosena.png" alt="Logo" class="img-fluid" width="50%" />
@@ -131,7 +152,7 @@ Temas
             </div>
         </section>
         <section id="gal" class="container py-5">
-            <h2 class="pb-5">Galería de Imagenes</h2>
+            <h2 class="py-5">Galería de Imagenes</h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
@@ -139,7 +160,8 @@ Temas
                         <div class="card-body">
                             <h4 class="card-title">John Doe</h4>
                             <p class="card-text">Some example text.</p>
-                            <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#card1">See Profile</button>
+                            <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#card1">See
+                                Profile</button>
 
                             <div id="card1" class="collapse">
                                 Lorem ipsum dolor text....
@@ -170,6 +192,28 @@ Temas
             </div>
         </section>
 
+        <section id="icons" class="container py-5">
+            <h2 class="py-5">Iconos de Bootstrap</h2>
+            <div class="row justify-content-center align-items-center">
+                <div class="col text-center">
+                    <i class="bi bi-android2" style="font-size: 100px;"></i>
+                </div>
+                <div class="col text-center">
+                    <i class="bi bi-backpack" style="font-size: 100px;"></i>
+                </div>
+                <div class="col text-center">
+                    <i class="bi bi-bluesky" style="font-size: 100px;"></i>
+                </div>
+                <div class="col text-center">
+                    <i class="bi bi-bluetooth" style="font-size: 100px;"></i>
+                </div>
+                <div class="col text-center">
+                    <i class="bi bi-joystick" style="font-size: 100px;"></i>
+                </div>
+            </div>
+
+        </section>
+
     </main>
     <footer class="bg-dark">
         <p class="py-4 text-center text-light">Carlos Andres Castro - Copyright©
@@ -178,6 +222,12 @@ Temas
 
     <!--Bootstrap JS-->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        //¿Cómo esconder el "#" hash de una url
+        window.onhashchange = function () {
+            window.history.pushState('', document.title, window.location.pathname)
+        }
+    </script>
 
 </body>
 

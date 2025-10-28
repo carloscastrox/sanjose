@@ -1,0 +1,34 @@
+<h1 class="display-6">Algoritmo 8</h1>
+<p>Algoritmo que nos salude dependiendo la hora digitada
+        a.	Si la hora es entre las 6-12 Buenos días
+        b.	Si la hora es entre las 12-18 Buenas tardes
+        c.	Si la hora es entre las 18-6 buenas noches</p>
+<div>
+    <h1 class="display-6">Solución</h1>
+    <div class="card">
+        <div class="card-body">
+            <form action="" method="">
+                <div class="mb-3 mt-3">
+                    <label for="numero" class="form-label">Ingrese la hora:</label>
+                    <input type="number" class="form-control" id="hora" name="numero" required>
+                </div>
+                <button type="button" class="btn btn-primary" id="msg">Mensaje</button>
+                <div id="result"></div>
+            </form>
+            <script>
+                document.getElementById('msg').addEventListener('click', () =>{
+                    const hora = parseInt(document.getElementById('hora').value);
+
+                    if (hora >= 6 && hora <= 12) {
+                        document.getElementById('result').innerHTML = "<p>Buenos días</p>";                        
+                    }else if (hora > 12 && hora <= 18) {
+                        document.getElementById('result').innerHTML = "<p>Buenas tardes</p>";                        
+                    }else{
+                        document.getElementById('result').innerHTML = "<p>Buenas noches</p>";                        
+                    }
+                });
+            </script>
+            
+        </div>
+    </div>
+</div>

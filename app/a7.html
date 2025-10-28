@@ -1,0 +1,27 @@
+<h1 class="display-6">Algoritmo 7</h1>
+<p>Vamos a pedir un número entero al usuario, para luego calcular si es par o impar.</p>
+<div>
+    <h1 class="display-6">Solución</h1>
+    <div class="card">
+        <div class="card-body">
+            <form action="" method="">
+                <div class="mb-3 mt-3">
+                    <label for="numero" class="form-label">Ingrese un número entero:</label>
+                    <input type="number" class="form-control" id="numero" name="numero" required>
+                </div>
+                <button type="button" class="btn btn-primary" id="calcular">Calcular</button>
+                <div id="result"></div>
+            </form>
+            <script>
+                document.getElementById('calcular').addEventListener('click', () => {
+                    let num = parseInt(document.getElementById('numero').value);
+                    if (num%2 == 0) {
+                        document.getElementById('result').innerHTML = "<p>El número " + num + " es par.</p>";                  
+                    }else{
+                        document.getElementById('result').innerHTML = "<p>El número " + num + " es impar.</p>";                  
+                    }
+                });
+            </script>
+        </div>
+    </div>
+</div>
